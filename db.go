@@ -9,7 +9,7 @@ type EasyBolt struct {
 	Bucket string
 }
 
-func NewBoltDB(dbname, bucket string) (*EasyBolt, error) {
+func NewEasyBolt(dbname, bucket string) (*EasyBolt, error) {
 	db, err := bolt.Open(dbname, 0600, nil)
 	if err != nil {
 		return nil, err
