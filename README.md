@@ -10,14 +10,16 @@ import (
 )
 
 func main() {
+	//create a db and a table
+        // db  file name and  bucket name
 	sdb, err := easyboltdb.NewBoltDB("name.db", "user")
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	//save 
 	sdb.Update("author", "fy138")
 	sdb.Update("today", "2022-01-27")
-
+	//get 
 	n, err := sdb.View("author")
 	if err != nil {
 		log.Fatal(err)
