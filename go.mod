@@ -1,4 +1,4 @@
-module boltdb
+module easyboltdb
 
 go 1.17
 
