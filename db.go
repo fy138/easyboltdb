@@ -1,4 +1,4 @@
-package main
+package easyBoltDB
 
 import (
 	"github.com/boltdb/bolt"
