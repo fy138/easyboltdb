@@ -12,7 +12,7 @@ import (
 func main() {
 	//create a db and a table
         // db  file name and  bucket name
-	sdb, err := easyboltdb.NewBoltDB("name.db", "user")
+	sdb, err := easyboltdb.NewEasyBolt("name.db", "user")
 	if err != nil {
 		log.Fatal(err)
 	}
